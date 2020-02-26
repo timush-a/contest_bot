@@ -7,7 +7,7 @@ from telebot import types
 knownUsers = []
 userStep = {}
 
-bot = telebot.TeleBot('1013658643:AAEdGzAc6Mcrfh6xACpHfAiobfBdz69xjhE')
+bot = telebot.TeleBot('TOKEN')
 
 folder_with_pictures = r'M:\contest_bot\png\\'[:-1]
 
