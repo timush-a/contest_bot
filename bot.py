@@ -11,7 +11,8 @@ bot = telebot.TeleBot('TOKEN')
 
 folder_with_pictures = r'M:\contest_bot\png\\'[:-1]
 
-#function that selects pictures to send
+
+# function that selects pictures to send
 def file_name():
     for i in set(os.listdir(folder_with_pictures)):
         yield i
@@ -77,9 +78,10 @@ def msg_image_select(m):
     cid = m.chat.id
     text = m.text
     bot.send_chat_action(cid, 'typing')
-# send the image and hide keyboard, after image is sent
 
-    if text == "I want a meme": 
+
+# send the image and hide keyboard, after image is sent
+    if text == "I want a meme":
         bot.send_photo(cid, open(ffolder_with_pictures + file_name.__next__(), 'rb'), reply_markup=hideBoard)
         userStep[cid] = 0
     elif text == "Please send another":
@@ -98,6 +100,5 @@ def command_default(m):
         bot.send_photo(cid, open(folder_with_pictures + file_name.__next__(), 'rb'), reply_markup=hideBoard)
     except StopIteration:
         file_name = file_name()
-
 
 bot.polling()
