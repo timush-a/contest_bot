@@ -1,4 +1,4 @@
-# ![presenatation](presentaion.gif)
+# ![presenatation](https://github.com/timush-a/contest_bot/blob/master/presentation.gif)
 ## contest_bot
 
 Telegram bot  to participate in the competition.
