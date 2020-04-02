@@ -1,4 +1,6 @@
-# contest_bot
+# ![presenatation](presentaion.gif)
+## contest_bot
+
 Telegram bot  to participate in the competition.
 
 To use the bot you need to find and download pictures with tasks.
